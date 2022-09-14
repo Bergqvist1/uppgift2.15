@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Uppgift_2_15
 {
     class Program
@@ -6,13 +7,11 @@ namespace Uppgift_2_15
         static void Main(string[] args)
         {
             Console.WriteLine("Skriv en mening med 3 ord och punkt i slutet");
+            string mening = Console.ReadLine();
 
-            var inputParts = Console.ReadLine().Split(' '); 
-            string a = inputParts[0];
-            string b = inputParts[1];
-            string c = inputParts[2];
+            string[] ord = mening.Split(' ', '.');
 
-            Console.WriteLine(c + " " + b + " " + a + ".");
+            Console.WriteLine("Backlänges blir din mening " + ord[2] + " " + ord[1] + " " + ord[0] + ".");
 
 
         }
